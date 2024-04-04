@@ -1,4 +1,21 @@
-vendor/
-web/sites/default/files/
-web/sites/default/settings.local.php
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
 
+# Ignore default README files
+/web/README.txt
+/web/README.md
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/sites/README.txt
+/web/themes/README.txt
+
+# Ignore paths that contain user-generated content.
+/web/sites/*/files
+/web/sites/*/private
+
+# local settings file
+/web/sites/*/settings.local.php
