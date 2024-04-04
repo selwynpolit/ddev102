@@ -4,6 +4,11 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
 
 # Ignore default README files
 /web/README.txt
