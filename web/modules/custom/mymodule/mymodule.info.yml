@@ -1,0 +1,5 @@
+name: 'Mymodule'
+type: module
+description: 'Refresh my brain on devel generate'
+package: 'Custom'
+core_version_requirement: ^10

@@ -1,0 +1,7 @@
+block.settings.mymodule_starred_events:
+  type: block_settings
+  label: 'Starred Events block'
+  mapping:
+    example:
+      type: string
+      label: Example
