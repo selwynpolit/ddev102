@@ -3,11 +3,141 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - block_content.type.block_with_image
     - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
     - node.type.page
+    - views.view.content_recent
+  content:
+    - 'block_content:banner_block:594d4405-36de-4883-a90d-0fdf8694ec24'
   module:
+    - block_content
+    - layout_builder
+    - layout_discovery
     - text
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          065d5c88-7bc4-4875-9ff0-b52cbc6fd508:
+            uuid: 065d5c88-7bc4-4875-9ff0-b52cbc6fd508
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          fa10d57d-85c8-47de-927c-75f0bf249da9:
+            uuid: fa10d57d-85c8-47de-927c-75f0bf249da9
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Banner section'
+          context_mapping: {  }
+        components:
+          fc7b3c73-dffe-434a-9e5e-5073e43146a8:
+            uuid: fc7b3c73-dffe-434a-9e5e-5073e43146a8
+            region: content
+            configuration:
+              id: 'block_content:594d4405-36de-4883-a90d-0fdf8694ec24'
+              label: 'AI hand'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          b588641d-7e19-47d6-8bf7-f38a1ea36219:
+            uuid: b588641d-7e19-47d6-8bf7-f38a1ea36219
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: 'cool hand'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 2
+              block_serialized: null
+            weight: 1
+            additional: {  }
+          9c3d48f0-e12a-4cf7-bd28-e28a8abf2e10:
+            uuid: 9c3d48f0-e12a-4cf7-bd28-e28a8abf2e10
+            region: content
+            configuration:
+              id: 'views_block:content_recent-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Section with 2 cols'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          6835edbe-1d0f-4a71-88dc-34f31d10b425:
+            uuid: 6835edbe-1d0f-4a71-88dc-34f31d10b425
+            region: second
+            configuration:
+              id: 'inline_block:block_with_image'
+              label: 'Ice cave'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 3
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          62044e21-3d76-42d5-bcd5-190f1331a9d5:
+            uuid: 62044e21-3d76-42d5-bcd5-190f1331a9d5
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: test
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 4
+              block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
@@ -23,6 +153,9 @@ content:
     weight: 100
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

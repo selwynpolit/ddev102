@@ -1,0 +1,8 @@
+uuid: 61f09665-7cdf-4d8c-8448-1a60a2453b39
+langcode: en
+status: true
+dependencies: {  }
+id: block_with_image
+label: 'Block with image'
+revision: 0
+description: ''
