@@ -1,0 +1,22 @@
+uuid: 4572b28e-01a2-4c5d-a7e1-c76ec3a2cb53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drupalbook_page.field_page_markdown
+    - node.type.drupalbook_page
+  module:
+    - user
+id: node.drupalbook_page.teaser
+targetEntityType: node
+bundle: drupalbook_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_page_markdown: true

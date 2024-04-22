@@ -1,0 +1,28 @@
+uuid: 15aa2d98-c44b-48cc-8a73-43a01ad49104
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drupalbook_page.field_page_markdown
+    - node.type.drupalbook_page
+  module:
+    - text
+    - user
+id: node.drupalbook_page.default
+targetEntityType: node
+bundle: drupalbook_page
+mode: default
+content:
+  field_page_markdown:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

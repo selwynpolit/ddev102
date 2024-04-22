@@ -1,0 +1,26 @@
+uuid: 426e19af-da6a-4738-9b74-5e074d02376d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_markdown
+    - filter.format.markdown
+    - node.type.drupalbook_page
+  module:
+    - text
+id: node.drupalbook_page.field_page_markdown
+field_name: field_page_markdown
+entity_type: node
+bundle: drupalbook_page
+label: 'Page Markdown'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+  allowed_formats:
+    - markdown
+field_type: text_with_summary

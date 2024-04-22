@@ -1,0 +1,22 @@
+uuid: d38bf12c-14cd-47fd-beaf-f2a02052957e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dbook_page
+label: 'Dbook page'
+type: 'canonical_entities:node'
+pattern: '/drupal-at-your-fingertips/[node:title]'
+selection_criteria:
+  1f96b6cd-c6f0-4e72-8f8f-91ac9fd268cc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1f96b6cd-c6f0-4e72-8f8f-91ac9fd268cc
+    context_mapping:
+      node: node
+    bundles:
+      drupalbook_page: drupalbook_page
+selection_logic: and
+weight: -5
+relationships: {  }
