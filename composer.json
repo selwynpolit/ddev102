@@ -22,11 +22,14 @@
         "drupal/core-recommended": "^10.2",
         "drupal/examples": "^4.0",
         "drupal/extlink": "^1.7",
+        "drupal/jsonapi_extras": "^3.24",
         "drupal/lb_plus": "^2.1",
         "drupal/markdown_easy": "^1.0",
         "drupal/module_filter": "^5.0",
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
+        "drupal/restui": "^1.21",
+        "drupal/simple_oauth": "^6.0-beta",
         "drush/drush": "^12.5"
     },
     "conflict": {
