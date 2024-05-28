@@ -1,0 +1,7 @@
+test.example:
+  path: '/test/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\test\Controller\TestController'
+  requirements:
+    _permission: 'access content'

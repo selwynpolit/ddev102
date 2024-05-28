@@ -1,0 +1,5 @@
+name: 'Route Play'
+type: module
+description: 'Playing with Routes'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,5 @@
+name: 'Block Play'
+type: module
+description: 'Playing with Blocks'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Webfirst Exercises module.
+ */
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function webfirst_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // \Drupal::messenger()->addMessage('Form ID: ' . $form_id);
+  if ($form_id == 'node_page_edit_form' && isset($form['created'])) {
+    // Add the custom validation for the 'created' field only.
+    $form['created']['widget'][0]['value']['#element_validate'][] = 'validate_special_date';
+  }
+}
+
+
+function validate_special_date($element, \Drupal\Core\Form\FormStateInterface $form_state) {
+  if ($element['#name'] == 'created[0][value]') {
+    $date_formatter = \Drupal::service('date.formatter');
+    $dt = ($element['#value']);
+    $date = $dt['date'];
+    $day = (int) substr($date, 8, 2);
+    //$day = $date_formatter->format($element['#value'], 'custom', 'd');
+    $valid_days = [12, 18, 20, 24, 30];
+    if (!in_array($day, $valid_days)) {
+      $form_state->setError($element, 'The created date is not a special date.');
+    }
+
+  }
+}

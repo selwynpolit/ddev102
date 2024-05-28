@@ -1,0 +1,5 @@
+services:
+  route_play.hello_world_salutation:
+    class: Drupal\route_play\HelloWorldSalutation
+    arguments: ['@config.factory']
+

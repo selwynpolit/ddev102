@@ -1,0 +1,5 @@
+name: 'test'
+type: module
+description: 'test plugin manager'
+package: Custom
+core_version_requirement: ^10 || ^11

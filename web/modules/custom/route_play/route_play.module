@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Route Play module.
+ */
+
+/**
+ * implement hook_help
+ **/
+function route_play_help($route, $help) {
+  switch ($route) {
+    case 'help.page.route_play':
+      $file_contents = file_get_contents( dirname(__FILE__) . "/README.md");
+      $cleaned_contents =  Drupal\Component\Utility\Html::escape($file_contents);
+      $cleaned_contents = str_replace("\n", "<br>", $cleaned_contents);
+      return $cleaned_contents;
+
+      // convert markdown to html?
+      // Copilot has some ideas...
+
+
+      return '<p>' . t('Route Play module provides a playground for learning about routing in Drupal.') . '</p>';
+  }
+}
+
+
+function route_play_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  \Drupal::messenger()->addMessage('Form ID: ' . $form_id);
+  // Or log it to watchdog log.
+//  \Drupal::logger('nisto_form_alter')->notice('Form ID: ' . $form_id);
+}

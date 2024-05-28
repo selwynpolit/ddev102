@@ -1,0 +1,6 @@
+route_play.hello_config:
+  title: Salutation Configuration
+  description: Route Play Module config form
+  parent: system.admin_config_system
+  route_name: route_play.hello_config
+  weight: 10

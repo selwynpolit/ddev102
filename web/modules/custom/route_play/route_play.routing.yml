@@ -1,0 +1,18 @@
+route_play.salutation:
+  path: '/route-play/salute'
+  defaults:
+    _title: 'Salutation: Recipes'
+    _controller: '\Drupal\route_play\Controller\RoutePlayController:salutation'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+
+route_play.hello_config:
+  path: '/admin/config/system/salutation-config'
+  defaults:
+    _title: 'Salutation Configuration'
+    _form: 'Drupal\route_play\Form\SalutationConfigForm'
+  requirements:
+    _permission: 'administer site configuration'

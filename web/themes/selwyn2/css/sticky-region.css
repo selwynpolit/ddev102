@@ -1,0 +1,16 @@
+.sticky-region {
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+/*.test-sticky {*/
+/*  position: -webkit-sticky; !* For Safari *!*/
+/*  position: sticky;*/
+/*  top: 0;*/
+/*  background-color: yellow;*/
+/*  padding: 50px;*/
+/*  font-size: 20px;*/
+/*  overflow: hidden;*/
+/*  z-index: 1000;*/
+/*}*/

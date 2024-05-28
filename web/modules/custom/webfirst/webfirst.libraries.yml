@@ -1,0 +1,7 @@
+special_nodes_block:
+  version: 1.0
+  js:
+    js/special-nodes.js: {}
+  css:
+    theme:
+      css/special-nodes.css: {}

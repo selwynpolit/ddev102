@@ -1,0 +1,5 @@
+name: 'Webfirst Exercises'
+type: module
+description: 'Webfirst Exercises'
+package: Selwyn
+core_version_requirement: ^10 || ^11

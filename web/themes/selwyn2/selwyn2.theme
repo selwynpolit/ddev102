@@ -1,0 +1,13 @@
+<?php
+
+// add a preprocess function to load the page title
+function selwyn2_preprocess_page(&$variables) {
+  $request = \Drupal::request();
+  $variables['page_title'] = \Drupal::service('title_resolver')->getTitle($request, \Drupal::routeMatch()->getRouteObject());
+
+}
+
+//// add a preprocess_node function to load the node title
+//function selwyn2_preprocess_node(&$variables) {
+//  $variables['node_title'] = $variables['node']->getTitle();
+//}
