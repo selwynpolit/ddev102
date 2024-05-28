@@ -1,0 +1,10 @@
+uuid: 9546a4cf-4c84-40ee-b3e1-e5bd725371fd
+langcode: en
+status: true
+dependencies: {  }
+id: ingredient
+label: Ingredient
+icon_uuid: null
+icon_default: null
+description: 'Ingredient for recipes'
+behavior_plugins: {  }

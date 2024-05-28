@@ -1,0 +1,22 @@
+uuid: fced5254-0320-486a-86f1-cfb8b1cc3087
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: recipes
+label: Recipes
+type: 'canonical_entities:node'
+pattern: '/recipes/[node:title]'
+selection_criteria:
+  8682eec9-7d1c-4bfa-9c05-71ed832b4f6e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8682eec9-7d1c-4bfa-9c05-71ed832b4f6e
+    context_mapping:
+      node: node
+    bundles:
+      recipe: recipe
+selection_logic: and
+weight: -5
+relationships: {  }

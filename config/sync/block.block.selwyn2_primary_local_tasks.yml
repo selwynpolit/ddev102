@@ -1,0 +1,22 @@
+uuid: 1b76f9cd-2757-4139-a5c0-17b485fadc7c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - selwyn2
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: selwyn2_primary_local_tasks
+theme: selwyn2
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

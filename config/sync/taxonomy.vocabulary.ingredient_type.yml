@@ -1,0 +1,8 @@
+uuid: 53c55f1e-0cd5-44a9-90dd-4236ddd4be89
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ingredient Type'
+vid: ingredient_type
+description: ''
+weight: 0

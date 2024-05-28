@@ -1,0 +1,48 @@
+uuid: 6d06a78b-225b-4567-a43a-8d9ccb0265b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_unit
+field_name: field_unit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cup
+      label: cup
+    -
+      value: ounce
+      label: ounce
+    -
+      value: pound
+      label: pound
+    -
+      value: kilogram
+      label: kilogram
+    -
+      value: teaspoon
+      label: teaspoon
+    -
+      value: tablespoon
+      label: tablespoon
+    -
+      value: pinch
+      label: pinch
+    -
+      value: dash
+      label: dash
+    -
+      value: tiny_smidge
+      label: 'tiny smidge'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 8354940c-0dc3-4cf0-8e57-607541bfa450
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - selwyn
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: selwyn_breadcrumbs
+theme: selwyn
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: e0fd0551-3c2d-4a84-b352-4a0a817bf6ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - selwyn
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: selwyn_powered
+theme: selwyn
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

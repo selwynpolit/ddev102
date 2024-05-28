@@ -1,0 +1,20 @@
+uuid: 03f881cb-996a-4088-b089-11447c79d42a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - selwyn
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: selwyn_primary_admin_actions
+theme: selwyn
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

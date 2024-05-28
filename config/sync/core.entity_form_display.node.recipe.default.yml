@@ -1,0 +1,142 @@
+uuid: fb71c855-13e3-493b-a05f-4272bdcc6fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recipe.body
+    - field.field.node.recipe.field_color
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_license_plate
+    - field.field.node.recipe.field_real_name
+    - field.field.node.recipe.field_similar_recipes
+    - node.type.recipe
+  module:
+    - field_example
+    - inline_entity_form
+    - license_plate
+    - link
+    - path
+    - test
+    - text
+id: node.recipe.default
+targetEntityType: node
+bundle: recipe
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_color:
+    type: field_example_colorpicker
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ingredients:
+    type: inline_entity_form_complex
+    weight: 122
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+  field_license_plate:
+    type: default_license_plate_widget
+    weight: 124
+    region: content
+    settings:
+      number_size: 60
+      code_size: 5
+      fieldset_state: open
+      placeholder:
+        number: ''
+        code: ''
+    third_party_settings: {  }
+  field_real_name:
+    type: realname_default
+    weight: 123
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_similar_recipes:
+    type: link_default
+    weight: 126
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

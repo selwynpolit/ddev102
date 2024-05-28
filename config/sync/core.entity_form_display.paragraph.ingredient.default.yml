@@ -1,0 +1,39 @@
+uuid: 205603e6-f389-4c4e-b387-60261824afb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ingredient.field_name
+    - field.field.paragraph.ingredient.field_quantity
+    - field.field.paragraph.ingredient.field_unit
+    - paragraphs.paragraphs_type.ingredient
+id: paragraph.ingredient.default
+targetEntityType: paragraph
+bundle: ingredient
+mode: default
+content:
+  field_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quantity:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_unit:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

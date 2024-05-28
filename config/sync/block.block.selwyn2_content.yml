@@ -1,0 +1,22 @@
+uuid: 0432935e-09e4-4a72-aecd-7058a592616f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - selwyn2
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: selwyn2_content
+theme: selwyn2
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

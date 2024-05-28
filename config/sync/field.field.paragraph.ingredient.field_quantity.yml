@@ -1,0 +1,19 @@
+uuid: 8f16cba5-b5fb-47d9-8e31-6db12a29bab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quantity
+    - paragraphs.paragraphs_type.ingredient
+id: paragraph.ingredient.field_quantity
+field_name: field_quantity
+entity_type: paragraph
+bundle: ingredient
+label: Quantity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

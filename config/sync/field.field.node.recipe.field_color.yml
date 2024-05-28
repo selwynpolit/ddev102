@@ -1,0 +1,21 @@
+uuid: 25806c07-487d-4d33-a03e-0b54f71a920d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.recipe
+  module:
+    - field_example
+id: node.recipe.field_color
+field_name: field_color
+entity_type: node
+bundle: recipe
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_example_rgb

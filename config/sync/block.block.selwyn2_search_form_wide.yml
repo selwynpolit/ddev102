@@ -1,0 +1,23 @@
+uuid: 750867e9-e316-44e2-af16-72aeef3bdcc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - selwyn2
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: selwyn2_search_form_wide
+theme: selwyn2
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

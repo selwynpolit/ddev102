@@ -1,0 +1,21 @@
+uuid: b91a4f6a-684a-4104-9fce-04ddcca498de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_real_name
+    - node.type.recipe
+  module:
+    - test
+id: node.recipe.field_real_name
+field_name: field_real_name
+entity_type: node
+bundle: recipe
+label: 'Real Name'
+description: 'Put the whole name here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: realname

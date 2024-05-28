@@ -1,0 +1,24 @@
+uuid: 7800e674-e300-439d-a27e-39c25a6cfcfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recipe
+  module:
+    - text
+id: node.recipe.body
+field_name: body
+entity_type: node
+bundle: recipe
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

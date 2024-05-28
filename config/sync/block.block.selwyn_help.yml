@@ -1,0 +1,22 @@
+uuid: 86c43f56-ae9f-47b1-9853-77e0928cf3c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - selwyn
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: selwyn_help
+theme: selwyn
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

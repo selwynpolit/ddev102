@@ -1,0 +1,23 @@
+uuid: 20c218f5-4019-40b0-a172-07c0b067a031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_recipes
+    - node.type.recipe
+  module:
+    - link
+id: node.recipe.field_similar_recipes
+field_name: field_similar_recipes
+entity_type: node
+bundle: recipe
+label: 'Similar recipes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

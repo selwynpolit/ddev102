@@ -1,0 +1,22 @@
+uuid: 3b3d7a6b-11cc-4e7b-b301-570fae1d2a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license_plate
+    - node.type.recipe
+  module:
+    - license_plate
+id: node.recipe.field_license_plate
+field_name: field_license_plate
+entity_type: node
+bundle: recipe
+label: 'License Plate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  codes: ''
+field_type: license_plate
