@@ -24,3 +24,6 @@
 
 # local settings file
 /web/sites/*/settings.local.php
+
+
+.DS_Store
