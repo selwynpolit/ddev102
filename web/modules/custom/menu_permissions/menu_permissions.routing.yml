@@ -1,0 +1,7 @@
+menu_permissions.menu_edit:
+  path: '/menu-permissions/menu-edit'
+  defaults:
+    _title: 'Menu Edit'
+    _controller: '\Drupal\menu_permissions\Controller\MenuEditController'
+  requirements:
+    _permission: 'access content'

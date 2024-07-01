@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Menu Permissions module.
+ */
+/**
+ * Implements hook_entity_type_alter().
+ */
+//function menu_permissions_entity_type_alter(array &$entity_types) {
+//  if (isset($entity_types['menu_link_content'])) {
+//    $entity_types['menu_link_content']->setHandlerClass('access', 'Drupal\menu_permissions\Access\MenuLinkContentAccessHandler');
+//  }
+//}
+
+
+function menu_permissions_entity_type_build(array &$entity_types): void {
+  if (isset($entity_types['menu'])) {
+    $original = $entity_types['menu']->getHandlerClass('access');
+    $entity_types['menu']->setHandlerClass('access-original', $original);
+//    $entity_types['menu']->setHandlerClass('access', 'Drupal\workbench_menu_access\WorkbenchMenuAccessControlHandler');
+    $entity_types['menu']->setHandlerClass('access', 'Drupal\menu_permissions\Access\MenuLinkContentAccessHandler');
+  }
+  if (isset($entity_types['menu_link_content'])) {
+    $original = $entity_types['menu_link_content']->getHandlerClass('access');
+    $entity_types['menu_link_content']->setHandlerClass('access-original', $original);
+    //$entity_types['menu_link_content']->setHandlerClass('access', 'Drupal\workbench_menu_access\WorkbenchMenuLinkContentAccessControlHandler');
+    $entity_types['menu_link_content']->setHandlerClass('access', 'Drupal\menu_permissions\Access\MenuLinkContentAccessHandler');
+  }
+}
+
+
+//function menu_permissions_menu_link_content_alter(array &$definitions) {
+//  $definitions['menu_link_content']['access callback'] = 'menu_permissions_menu_link_content_access';
+//}
+
+
+//function menu_permissions_menu_link_content_access(EntityInterface $entity, $operation, AccountInterface $account) {
+//  // Custom access logic for MenuLinkContent entities.
+//  switch ($operation) {
+//    case 'view':
+//      // Allow view access based on custom logic or permissions.
+//      return AccessResult::allowedIfHasPermission($account, 'edit menu links');
+

@@ -29,6 +29,8 @@
         "drupal/jsonapi_extras": "^3.24",
         "drupal/lb_plus": "^2.1",
         "drupal/markdown_easy": "^1.0",
+        "drupal/masquerade": "^2.0@RC",
+        "drupal/menu_custom_access": "^2.0@beta",
         "drupal/module_filter": "^5.0",
         "drupal/node_view_permissions": "^1.6",
         "drupal/paragraphs": "^1.17",
@@ -37,12 +39,14 @@
         "drupal/restui": "^1.21",
         "drupal/simple_oauth": "^6.0-beta",
         "drupal/smart_date": "^4.1",
+        "drupal/workbench": "^1.4",
+        "drupal/workbench_menu_access": "^2.0",
         "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -110,6 +114,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/workbench_menu_access": {
+                "Disable menus without specific access": "./workbench_menu_access.patch"
+            }
         }
     },
     "require-dev": {

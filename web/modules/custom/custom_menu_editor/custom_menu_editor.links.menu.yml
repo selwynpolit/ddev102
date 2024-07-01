@@ -1,0 +1,7 @@
+custom_menu_editor.menu_list:
+  title: 'Custom Menu Editor'
+  description: 'Edit menus and menu items'
+  parent: system.admin_structure
+  route_name: custom_menu_editor.menu_list
+  weight: 10
+

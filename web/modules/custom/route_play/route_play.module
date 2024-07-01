@@ -29,4 +29,13 @@ function route_play_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
   \Drupal::messenger()->addMessage('Form ID: ' . $form_id);
   // Or log it to watchdog log.
 //  \Drupal::logger('nisto_form_alter')->notice('Form ID: ' . $form_id);
+  if ($form_id == 'media_library_add_form_upload') {
+    // Add some text to the form to help the user.
+//    $form['help_text'] = [
+//      '#type' => 'item',
+//      '#markup' => '<p>' . t('Keep titles short but informative, e.g., "Summer_Vacation_2024" instead of "img_12345"') . '</p>',
+//    ];
+    $form['container']['upload']['#description'] = t('Keep titles short but informative, e.g., "Summer_Vacation_2024" instead of "img_12345"') . '<br>' . $form['container']['upload']['#description'] ;
+  }
+
 }

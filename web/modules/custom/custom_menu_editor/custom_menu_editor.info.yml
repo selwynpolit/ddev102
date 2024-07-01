@@ -1,0 +1,6 @@
+name: Custom Menu Editor
+type: module
+description: 'Allows users to edit menus and menu items without full menu administration permissions.'
+core_version_requirement: ^10
+package: Custom
+# Claude 6-21-24:

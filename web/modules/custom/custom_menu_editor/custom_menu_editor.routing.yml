@@ -1,0 +1,33 @@
+custom_menu_editor.menu_list:
+  path: '/admin/structure/custom-menu-editor'
+  defaults:
+    _controller: '\Drupal\custom_menu_editor\Controller\CustomMenuEditorController::menuList'
+    _title: 'Custom Menu Editor'
+  requirements:
+    _permission: 'edit menus and menu items'
+
+custom_menu_editor.edit_menu:
+  path: '/admin/structure/custom-menu-editor/{menu}/edit'
+  defaults:
+    _form: '\Drupal\custom_menu_editor\Form\CustomMenuEditForm'
+    _title: 'Edit Menu'
+  requirements:
+    _custom_access: '\Drupal\custom_menu_editor\Access\CustomMenuAccessCheck::checkMenuAccess'
+  options:
+    parameters:
+      menu:
+        type: entity:menu
+
+custom_menu_editor.edit_menu_item:
+  path: '/admin/structure/custom-menu-editor/{menu}/item/{menu_link_content}/edit'
+  defaults:
+    _form: '\Drupal\custom_menu_editor\Form\CustomMenuItemEditForm'
+    _title: 'Edit Menu Item'
+  requirements:
+    _custom_access: '\Drupal\custom_menu_editor\Access\CustomMenuAccessCheck::checkMenuItemAccess'
+  options:
+    parameters:
+      menu:
+        type: entity:menu
+      menu_link_content:
+        type: entity:menu_link_content
