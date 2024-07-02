@@ -1,0 +1,13 @@
+diff --git a/web/modules/contrib/workbench_menu_access/src/WorkbenchMenuAccessControlHandler.php b/web/modules/contrib/workbench_menu_access/src/WorkbenchMenuAccessControlHandler.php
+index 34119d61..a0c2c8ba 100644
+--- a/web/modules/contrib/workbench_menu_access/src/WorkbenchMenuAccessControlHandler.php
++++ b/web/modules/contrib/workbench_menu_access/src/WorkbenchMenuAccessControlHandler.php
+@@ -76,7 +76,7 @@ public function checkSections(EntityInterface $entity, AccountInterface $account
+     $key = $entity->id() . ':' . $account->id();
+     if (!isset($check[$key])) {
+       // By default, no extra restrictions apply.
+-      $check[$key] = TRUE;
++      $check[$key] = FALSE;
+       $active = \Drupal::config('workbench_menu_access.settings')->get('access_scheme');
+       // @phpstan-ignore-next-line
+       $settings = $entity->getThirdPartySetting('workbench_menu_access', 'access_scheme');

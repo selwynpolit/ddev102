@@ -1,0 +1,4 @@
+leaflet-popup:
+  css:
+    theme:
+      css/leaflet-popup.css: {}
