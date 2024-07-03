@@ -12,7 +12,7 @@ use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Returns responses for Doi workbench routes.
+ * Menu Listing Service.
  */
 final class MenuListing {
 
@@ -29,7 +29,6 @@ final class MenuListing {
    * @var \Drupal\Core\Session\AccountInterface
    */
   protected $currentUser;
-
 
 
   /**
