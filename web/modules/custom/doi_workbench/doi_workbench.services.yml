@@ -1,0 +1,4 @@
+services:
+  doi_workbench.menu_listing:
+    class: Drupal\doi_workbench\MenuListing
+    arguments: ['@messenger', '@current_route_match', '@current_user', '@pager.manager']

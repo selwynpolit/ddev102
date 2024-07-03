@@ -1,0 +1,15 @@
+#doi_workbench.menu_listing:
+#  path: '/doi-workbench/menu-listing'
+#  defaults:
+#    _title: 'Menu Listing'
+#    _controller: '\Drupal\doi_workbench\Controller\MenuListingController'
+#  requirements:
+#    _permission: 'access content'
+doi_workbench.ajax_pager:
+  path: '/doi-workbench/ajax-pager'
+  defaults:
+    _controller: '\Drupal\doi_workbench\MenuListing::getUpdatedContent'
+    _title: 'AJAX Pager Content'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
