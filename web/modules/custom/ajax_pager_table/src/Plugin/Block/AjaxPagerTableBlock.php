@@ -67,7 +67,9 @@ class AjaxPagerTableBlock extends BlockBase implements ContainerFactoryPluginInt
    */
   public function build() {
     $page = \Drupal::request()->query->get('page') ?? 0;
-    $build = $this->tableContentService->getTableContent($page);
+    $build = $this->tableContentService->getTableContent($page, TRUE);
+    $build['table_content']['#prefix'] = '<div id="selwyn-ajax-wrapper">';
+    $build['table_content']['#suffix'] = '</div>';
     return $build;
   }
 

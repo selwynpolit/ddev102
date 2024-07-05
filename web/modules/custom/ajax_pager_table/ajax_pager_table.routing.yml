@@ -5,9 +5,9 @@
 #    _title: 'Load page'
 #  requirements:
 #    _permission: 'access content'
-ajax_pager.retrieve_page:
-  path: '/retrieve_page/{page}'
+ajax_pager.refresh_table:
+  path: '/refresh-selwyn-wrapper/{page}'
   defaults:
-    _controller: '\Drupal\ajax_pager_table\Controller\AjaxPagerTableController::getAjaxPage'
+    _controller: '\Drupal\ajax_pager_table\Controller\AjaxPagerTableController::refreshAjaxBlock'
   requirements:
     _permission: 'access content'
