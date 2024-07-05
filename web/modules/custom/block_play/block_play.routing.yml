@@ -1,0 +1,14 @@
+block_play.example:
+  path: '/block-play/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\block_play\Controller\BlockPlayController'
+  requirements:
+    _permission: 'access content'
+
+block_play.hide_block:
+  path: '/hide-block'
+  defaults:
+    _controller: '\Drupal\block_play\Controller\BlockPlayController::changeBlock'
+  requirements:
+    _permission: 'access content'
