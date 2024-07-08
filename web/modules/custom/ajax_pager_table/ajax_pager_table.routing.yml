@@ -9,5 +9,11 @@ ajax_pager.refresh_table:
   path: '/refresh-selwyn-wrapper/{page}'
   defaults:
     _controller: '\Drupal\ajax_pager_table\Controller\AjaxPagerTableController::refreshAjaxBlock'
+    page: 0
   requirements:
     _permission: 'access content'
+  options:
+    parameters:
+      page:
+        type: integer
+        required: false

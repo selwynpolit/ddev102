@@ -1,6 +1,5 @@
 <?php
 
-// In your module's src/Service folder, create a new file named TableContentService.php.
 namespace Drupal\ajax_pager_table\Service;
 
 use Drupal\Core\Messenger\MessengerInterface;
@@ -31,9 +30,6 @@ class TableContentService {
     $items_per_page = 10;
     $total_items = 105;
 
-    // $start = $page * $items_per_page;
-    //    $end = min($start + $items_per_page, $total_items);
-    //    $total_pages = ceil($total_items / $items_per_page);
     $pager = $this->pagerManager->getPager(0);
     if (is_null($pager)) {
       $pager = $this->pagerManager->createPager($total_items, $items_per_page, 0);
@@ -56,7 +52,7 @@ class TableContentService {
       '#type' => 'table',
       '#header' => $header,
       '#rows' => $rows,
-      '#prefix' => '<div id="ajax-pager-table-wrapper">',
+      '#prefix' => '<div id="table-wrapper">',
       '#suffix' => '</div>',
     ];
     if ($retrieve_pager) {
@@ -64,12 +60,16 @@ class TableContentService {
         $build['table_content']['pager'] = [
           '#type' => 'pager',
           '#element' => 0,
-          '#prefix' => '<div id="ajax-pager-wrapper">',
+          '#route_name' => 'ajax_pager.refresh_table',
+          '#parameters' => ['page' => $current_page],
+          '#prefix' => '<div id="pager-wrapper">',
           '#suffix' => '</div>',
         ];
       }
     }
-
+    // add wrapper around whole thing
+    $build['table_content']['#prefix'] = '<div id="ajax-pager-table-wrapper">';
+    $build['table_content']['#suffix'] = '</div>';
     return $build;
   }
 
