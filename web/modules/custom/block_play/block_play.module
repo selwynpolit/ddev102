@@ -4,3 +4,8 @@
  * @file
  * Primary module hooks for Block Play module.
  */
+
+// Display formid
+function block_play_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id):void {
+//  \Drupal::messenger()->addMessage($form_id);
+}
