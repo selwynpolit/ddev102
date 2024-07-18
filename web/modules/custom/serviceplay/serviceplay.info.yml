@@ -1,0 +1,5 @@
+name: 'Serviceplay'
+type: module
+description: 'Experiment with creating a custom service'
+package: 'Custom'
+core_version_requirement: ^10

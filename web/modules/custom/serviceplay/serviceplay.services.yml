@@ -1,0 +1,4 @@
+services:
+  serviceplay.example:
+    class: Drupal\serviceplay\Example
+    arguments: ['@pager.manager']

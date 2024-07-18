@@ -1,0 +1,7 @@
+serviceplay.example:
+  path: '/serviceplay/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\serviceplay\Controller\ServiceplayController'
+  requirements:
+    _permission: 'access content'
