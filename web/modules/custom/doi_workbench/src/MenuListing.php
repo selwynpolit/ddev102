@@ -133,11 +133,14 @@ final class MenuListing {
       //'#header' => [$this->t('Item')],
       '#header' => [\Drupal::translation()->translate('Item')],
       '#attributes' => ['class' => ['my-menu-list']],
+      '#prefix' => '<div id="menu-listing-ajax-wrapper">',
+      '#suffix' => '</div>',
       '#rows' => array_map(function ($item) {
         return [$item];
       }, $currentItems),
     ];
 
+    //$build['#attached']['library'][] = 'core/drupal.ajax';
     return $build;
   }
 

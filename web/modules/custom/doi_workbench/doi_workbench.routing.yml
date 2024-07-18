@@ -13,3 +13,19 @@ doi_workbench.ajax_pager:
   methods:  [GET]
   requirements:
     _permission: 'access content'
+
+doi_workbench.example:
+  path: '/doi-workbench/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\doi_workbench\Controller\DoiWorkbenchController'
+  requirements:
+    _permission: 'access content'
+
+doi_workbench.ajax_callback:
+  path: '/doi-workbench/ajax-callback'
+  defaults:
+    _controller: '\Drupal\doi_workbench\Controller\DoiWorkbenchController::ajaxCallback'
+    _title: 'AJAX Callback'
+  requirements:
+    _permission: 'access content'
