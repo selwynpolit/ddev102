@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Ingredient Type'
 vid: ingredient_type
-description: ''
+description: null
 weight: 0
+new_revision: false
