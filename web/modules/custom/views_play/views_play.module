@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Views Play module.
+ */
+
+/**
+ * Implements hook_views_pre_view().
+ *
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function views_play_views_pre_view(\Drupal\views\ViewExecutable $view, $display_id, array $args) {
+  // Check if the view is the one we want to alter.
+//  if ($view->id() === 'blurbs' && $display_id === 'page_1') {
+  if ($view->id() === 'blurbs_with_attachment' && $display_id === 'page_1') {
+    // Get the current user.
+    $user = \Drupal::currentUser();
+    // Check if the user has the 'administrator' role.
+    if ($user->hasRole('administrator')) {
+
+      $request = $view->getRequest();
+      $arguments = $request->attributes->get('_raw_variables')->all();
+
+
+      // Returns a big old array with 3 elements: status, type, and field_section_target_id(the field I filtered on).
+      $filters = $view->getDisplay()->getOption('filters');
+
+
+      // Returns a Drupal\views\Plugin\views\display\Page object for a page view.
+      $display = $view->getDisplay();
+      //$display->setOption('title', 'Hello, Administrator!');
+
+      // Disable exposed filter.
+      //$filters = $view->getDisplay()->getOption('filters');
+      //$filters['field_section_target_id']['exposed'] = FALSE;
+      //$display->setOption('filters', $filters);
+
+      // Change a filter.
+      $display = $view->getDisplay();
+      $filters = $view->getDisplay()->getOption('filters');
+      $filters['field_traffic_light_value']['value'] = ['red', 'green'];
+//      $filters['field_traffic_light_value']['value'] = ['red'];
+      $display->setOption('filters', $filters);
+      $display->setOption('title', 'Blurbs with attachment (red and green)');
+
+      // Set contextual filter value.
+      //$args[0] = 'red';
+      //$view->setArguments($args);
+
+
+
+    }
+  }
+}
+
