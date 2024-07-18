@@ -53,6 +53,9 @@ class LeafMapBlock extends BlockBase implements ContainerFactoryPluginInterface 
       ['lat' => 34.0522, 'lon' => -118.2437, 'city' => 'Los Angeles', 'job' => 'Data Analyst'],
       ['lat' => 36.746841, 'lon' => -119.772591, 'city' => 'Fresno', 'job' => 'Web Developer'],
       ['lat' => 30.2672, 'lon' => -97.7431, 'city' => 'Austin', 'job' => 'Software Engineer'],
+      ['lat' => 40.7128, 'lon' => -74.0060, 'city' => 'New York', 'job' => 'Software Engineer'],
+
+
       // Add more points as needed.
     ];
 
@@ -82,7 +85,8 @@ class LeafMapBlock extends BlockBase implements ContainerFactoryPluginInterface 
 
     // Create a map with the features.
     $map = leaflet_map_get_info('OSM Mapnik');
-    $build['map'] = $this->leafletService->leafletRenderMap($map, $features, '500px');
+    $build['map'] = $this->leafletService->leafletRenderMap($map, $features, '600px');
+    //$build['map'] = $this->leafletService->leafletRenderMap($map, $features, '100%');
 
     // Attach the library.
     $build['#attached']['library'][] = 'leafmap/leaflet-popup';
