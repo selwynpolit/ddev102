@@ -1,0 +1,22 @@
+uuid: 3c5a142d-ebd7-4289-a074-94e5b19895bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: blurb
+label: Blurb
+type: 'canonical_entities:node'
+pattern: '/blurb/[node:title]'
+selection_criteria:
+  46a86f33-e7e5-4fd5-a24d-ed641029e7d5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 46a86f33-e7e5-4fd5-a24d-ed641029e7d5
+    context_mapping:
+      node: node
+    bundles:
+      blurb: blurb
+selection_logic: and
+weight: -5
+relationships: {  }

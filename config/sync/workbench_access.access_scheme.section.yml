@@ -1,0 +1,14 @@
+uuid: 8186cd07-3b47-4dd1-888b-79e4d2e686c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sections
+id: section
+plural_label: Sections
+label: Section
+scheme: taxonomy
+scheme_settings:
+  vocabularies:
+    - sections
+  fields: {  }

@@ -1,0 +1,30 @@
+uuid: 4d10da5b-4679-45aa-bf2c-2c772db94325
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_traffic_light
+field_name: field_traffic_light
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: red
+      label: Red
+    -
+      value: yellow
+      label: Yellow
+    -
+      value: green
+      label: Green
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

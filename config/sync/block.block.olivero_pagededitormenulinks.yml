@@ -1,0 +1,25 @@
+uuid: e9de9f8b-18cb-4858-96a0-31f389edf584
+langcode: en
+status: true
+dependencies:
+  module:
+    - doi_workbench
+    - system
+  theme:
+    - olivero
+id: olivero_pagededitormenulinks
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: doi_workbench_editor_menu_links
+settings:
+  id: doi_workbench_editor_menu_links
+  label: 'Paged Editor Menu Links'
+  label_display: visible
+  provider: doi_workbench
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/1\r\n"

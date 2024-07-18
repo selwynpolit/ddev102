@@ -1,0 +1,25 @@
+uuid: 269bafcf-4c8f-40eb-a0ff-dfbdb60c66c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_play
+    - system
+  theme:
+    - olivero
+id: olivero_ajaxlinkblock
+theme: olivero
+region: content
+weight: -8
+provider: null
+plugin: block_play_ajax_link_block
+settings:
+  id: block_play_ajax_link_block
+  label: 'Ajax Link Block'
+  label_display: visible
+  provider: block_play
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/18\r\n"

@@ -5,12 +5,15 @@ dependencies:
   config:
     - node.type.article
     - node.type.page
+    - node.type.recipe
     - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
+    - custom_menu_editor
     - file
     - node
+    - node_view_permissions
     - path
     - system
     - taxonomy
@@ -22,7 +25,7 @@ label: 'Content editor'
 weight: 2
 is_admin: false
 permissions:
-  - 'access administration pages'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
@@ -30,18 +33,35 @@ permissions:
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
+  - 'create recipe content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any page content'
+  - 'delete any recipe content'
   - 'delete article revisions'
   - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit any recipe content'
+  - 'edit menus and menu items'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert page revisions'
+  - 'revert recipe revisions'
   - 'view all revisions'
+  - 'view any article content'
+  - 'view any drupalbook_page content'
+  - 'view any page content'
+  - 'view any recipe content'
+  - 'view article revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view recipe revisions'
   - 'view the administration theme'

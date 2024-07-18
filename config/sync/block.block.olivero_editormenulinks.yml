@@ -1,0 +1,28 @@
+uuid: fdd3c8d1-1758-4915-8d9a-b65a1c31b34d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_play
+    - node
+  theme:
+    - olivero
+id: olivero_editormenulinks
+theme: olivero
+region: header
+weight: 0
+provider: null
+plugin: editor_menu_links_block
+settings:
+  id: editor_menu_links_block
+  label: 'Editor Menu Links'
+  label_display: visible
+  provider: block_play
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      recipe: recipe

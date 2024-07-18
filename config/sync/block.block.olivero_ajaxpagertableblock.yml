@@ -1,0 +1,25 @@
+uuid: 0f2e5241-6fe5-4ed1-bd14-a7151f356932
+langcode: en
+status: true
+dependencies:
+  module:
+    - ajax_pager_table
+    - system
+  theme:
+    - olivero
+id: olivero_ajaxpagertableblock
+theme: olivero
+region: content
+weight: -9
+provider: null
+plugin: ajax_pager_table_block
+settings:
+  id: ajax_pager_table_block
+  label: 'AJAX Pager Table Block'
+  label_display: visible
+  provider: ajax_pager_table
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/18

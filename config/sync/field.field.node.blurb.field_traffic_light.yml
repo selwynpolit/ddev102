@@ -1,0 +1,23 @@
+uuid: 983899f5-7266-4893-99e6-633ebd012b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_traffic_light
+    - node.type.blurb
+  module:
+    - options
+id: node.blurb.field_traffic_light
+field_name: field_traffic_light
+entity_type: node
+bundle: blurb
+label: 'Traffic Light'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: green
+default_value_callback: ''
+settings: {  }
+field_type: list_string

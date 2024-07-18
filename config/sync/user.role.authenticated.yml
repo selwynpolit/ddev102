@@ -4,11 +4,15 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - user.role.administrator
+    - user.role.authenticated
+    - user.role.content_editor
   module:
     - comment
     - contact
     - file
     - filter
+    - masquerade
     - media
     - search
     - shortcut
@@ -25,6 +29,11 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'delete own files'
+  - 'masquerade as administrator'
+  - 'masquerade as any user'
+  - 'masquerade as authenticated'
+  - 'masquerade as content_editor'
+  - 'masquerade as super user'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
