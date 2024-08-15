@@ -1,0 +1,18 @@
+uuid: 1f55620c-dc6d-4d93-bb58-fddcd2ec49c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Button Tester'
+type: button_tester
+description: 'Content type to test button paragraph type'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

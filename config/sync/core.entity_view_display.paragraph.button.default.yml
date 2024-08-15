@@ -1,0 +1,21 @@
+uuid: ecfe4e2e-699a-4faa-a5a6-49ee6784c6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.button.field_textfield
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.default
+targetEntityType: paragraph
+bundle: button
+mode: default
+content:
+  field_textfield:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

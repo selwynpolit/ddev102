@@ -1,0 +1,34 @@
+uuid: 2ad36993-b230-4b4a-94d8-173b60a45302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_buttons
+    - node.type.button_tester
+    - paragraphs.paragraphs_type.button
+  module:
+    - entity_reference_revisions
+id: node.button_tester.field_buttons
+field_name: field_buttons
+entity_type: node
+bundle: button_tester
+label: Buttons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button: button
+    negate: 0
+    target_bundles_drag_drop:
+      button:
+        weight: 3
+        enabled: true
+      ingredient:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

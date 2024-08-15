@@ -1,0 +1,34 @@
+uuid: e001ffcc-fc87-43f8-9684-0fb3a31dc0b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.button_tester.body
+    - field.field.node.button_tester.field_buttons
+    - field.field.node.button_tester.field_buttons2
+    - node.type.button_tester
+  module:
+    - text
+    - user
+id: node.button_tester.teaser
+targetEntityType: node
+bundle: button_tester
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_buttons: true
+  field_buttons2: true

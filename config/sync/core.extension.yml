@@ -25,6 +25,8 @@ module:
   devel: 0
   devel_generate: 0
   doi_workbench: 0
+  drush_play: 0
+  drush_play2: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -51,6 +53,7 @@ module:
   layout_builder_expose_all_field_blocks: 0
   layout_discovery: 0
   leaflet: 0
+  leaflet_markercluster: 0
   leafmap: 0
   license_plate: 0
   link: 0
