@@ -1,0 +1,5 @@
+name: 'Drush Play2'
+type: module
+description: 'Try to get a drush command working'
+package: Custom
+core_version_requirement: ^10 || ^11

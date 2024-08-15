@@ -1,0 +1,5 @@
+name: 'Drush Play'
+type: module
+description: 'Play with Drush commands'
+package: Custom
+core_version_requirement: ^10 || ^11
