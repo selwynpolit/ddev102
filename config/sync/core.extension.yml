@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  add_content_by_bundle: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   ajax_pager_table: 0
@@ -15,6 +16,7 @@ module:
   cache_example: 0
   ckeditor5: 0
   comment: 0
+  conditional_fields: 0
   config: 0
   config_play: 0
   contact: 0
@@ -81,6 +83,9 @@ module:
   serialization: 0
   serviceplay: 0
   shortcut: 0
+  smart_date: 0
+  smart_date_recur: 0
+  smart_date_starter_kit: 0
   system: 0
   taxonomy: 0
   test: 0

@@ -1,0 +1,18 @@
+uuid: 9a3ff8da-94f7-4bc9-b524-817f8c167495
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Staff Profile'
+type: staff_profile
+description: 'For CCR testing'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true
