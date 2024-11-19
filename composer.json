@@ -43,7 +43,7 @@
         "drupal/restui": "^1.21",
         "drupal/simple_oauth": "^6.0-beta",
         "drupal/smart_date": "^4.1",
-        "drupal/smart_date_starter_kit": "^2.2",
+        "drupal/smart_date_starter_kit": "^2.3",
         "drupal/workbench": "^1.4",
         "drupal/workbench_menu_access": "^2.0",
         "drush/drush": "^12.5"
@@ -60,7 +60,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
