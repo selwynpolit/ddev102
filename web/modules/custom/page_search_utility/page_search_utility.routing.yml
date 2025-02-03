@@ -1,0 +1,7 @@
+page_search_utility_search1:
+  path: '/page-search/search1'
+  defaults:
+    _title: 'Page Search Utility'
+    _controller: '\Drupal\page_search_utility\Controller\PageSearchUtilityController'
+  requirements:
+    _permission: 'administer account settings'
